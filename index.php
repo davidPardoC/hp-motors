@@ -1,3 +1,13 @@
+<?php
+
+require 'db.php';
+
+$userEmail = $_POST['email'];
+$password = $_POST['password'];
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,9 +23,8 @@
 
 <body>
     <?php
-    require 'partials/navbar.php'
+    require 'partials/navbar.php';
     ?>
- 
     <div class="container">
 
         <div class="row">

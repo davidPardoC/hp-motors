@@ -1,6 +1,9 @@
 <?php
+
+require './db.php';
 $mesagge_button = 'Iniciar Sesion | Registrarse';
 $userName = '';
+
 ?>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">HP Motors</a>
@@ -37,14 +40,14 @@ $userName = '';
         </button>
       </div>
       <div class="modal-body">
-        <form>
+        <form action="index.php" method="POST">
           <div class="form-group">
-            <label for="exampleInputEmail1">Email</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <label>Email</label>
+            <input type="email" class="form-control" name="email">
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1">Contraseña</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <input type="password" class="form-control" name="password">
           </div>
           <button type="submit" class="btn btn-primary">Iniciar Sesion</button>
           <a href="register.php">Eres Nuevo? Crea una cuenta.</a>
